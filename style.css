@@ -58,7 +58,7 @@ section{
 	color: #fff;
 	margin-top: 40px;
 }
-.header button{
+ button{
 	display: block;
 	width:200px;
 	height: 70px;
@@ -72,7 +72,13 @@ section{
 	background:#e8a651;
 	margin-top: 40px;
 }
-.header button:hover{ 
+button#green-btn{
+	width: 300px;
+	margin-bottom:150px;
+	border-bottom-color: #14a58c;
+	background: #17c2a4;
+}
+ button:hover{ 
 	cursor: pointer;
  }
  #service-section{
@@ -82,13 +88,18 @@ section{
  	color: #fff;
 
  }
- #service-section h1{
+ #service-section h1,
+ #portfolio-section h1
+ {
  	font-size: 40px;
  	word-spacing: 5px;
  	text-transform:uppercase;
  }
+
   #service-section h1:after ,
-   #team-section h1:after{
+   #team-section h1:after,
+   #portfolio-section h1:after
+   {
   	content: '';
   	width:80px;
   	height:5px;
@@ -98,9 +109,14 @@ section{
   	margin:0 auto;
   	margin-top: 20px;
   }
+
  #service-section p,
+ #circle-section p
+ #portfolio-section p
  {
  	font-size: 15px;
+ 	font-weight: bold;
+ 	margin-bottom: 30px;
  }
  
 
@@ -112,8 +128,9 @@ section{
  }
 .service-section-item ,
  .team-section-item,
- #kill-section-item
+ .circle-section-item
  {
+ 	margin-top: 20px;
 	width: 24%;
 	float: left;
 	padding: 0 5px;
@@ -133,14 +150,16 @@ section{
 	font-size:20px; 
 }
 #team-section,
-#kill-section
+#kill-section,
+#circle-section
 {
 	background: #c8e7ee;
 	padding-top: 70px;
 	padding-bottom: 50px;
 }
 #team-section h1,
-#kill-section h1
+#kill-section h1,
+#circle-section h1
 {
 	font-size: 30px;
 	word-spacing: 5px;
@@ -180,7 +199,7 @@ section{
 .team-section-icon img:hover{
 	opacity: 1;
 }
-#kill-section{
+#kill-section,#circle-section{
 	background-color:#fff;
 }
 #kill-section-desc{
@@ -191,4 +210,95 @@ section{
 	text-transform: capitalize;
 
 }
+#portfolio-section{
+	margin-top: 100px;
+
+	background: #ffdd99;
+
+}
+ #portfolio-section h1:after{
+ 	background: #e5c37f;
+ }
+#portfolio-section p{
+	margin:30px;
+	text-transform:capitalize;
+}
+.portfolio-menu{
+width:350px;
+margin: auto;
+padding-bottom: 40px;
+
+
+}
+.portfolio-menu li{
+	float: left;
+	padding:10px 20px;
+	background: #ebc985;
+	margin-right: 6px;
+	margin-left: 5px;
+	border-radius: 4px;
+}
+.portfolio-menu li.active{
+	background: #fff;
+}
+.portfolio-section-item{
+	width:49%;
+	float: left;
+	margin-bottom:50px;
+
+}
+.portfolio-section-item h5{
+	font-size: 20px;
+	font-weight: 200;
+	margin-top: 20px;
+}
+/*override circle css*/
+/*change border color*/
+.c100{
+	float: none;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.c100 .bar.bgred{
+	border: 0.08em solid red !important;;
+}
+.c100 .bar.bgblue{
+	border: 0.08em solid blue !important;
+}
+.c100 .bar.bgorange{
+	border: 0.08em solid orange !important;;
+}
+.c100 .fill.bgorange{
+	border: 0.08em solid orange !important;;
+}
+.c100 .bar.bggreen{
+	border: 0.08em solid green !important;;
+}
+.c100 .fill.bggreen{
+	border: 0.08em solid green !important;;
+}
+
+/*change color span in event hover*/
+.c100.p25 >span:hover {
+	color: blue;
+	cursor: pointer;
+}
+.c100.p50 >span:hover {
+	color: red;
+	cursor: pointer;
+}
+.c100.p50 >span:hover {
+	color: red;
+	cursor: pointer;
+}
+.c100.p75 >span:hover {
+	color: orange;
+	cursor: pointer;
+}
+.c100.p90 >span:hover {
+	color: green;
+	cursor: pointer;
+}
+
 
