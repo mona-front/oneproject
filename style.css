@@ -238,8 +238,12 @@ padding-bottom: 40px;
 	margin-left: 5px;
 	border-radius: 4px;
 }
+
 .portfolio-menu li.active{
 	background: #fff;
+}
+.portfolio-menu li:hover{
+	cursor: pointer;
 }
 .portfolio-section-item{
 	width:49%;
