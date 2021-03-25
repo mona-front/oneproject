@@ -14,10 +14,10 @@
 				<nav class="header_nav clearfix">
 					<ul  class="header_list">
 						<li><a href="#" class="active">home</a></li>
-						<li><a href="#">about</a></li>
-						<li><a href="#">work</a></li>
+						<li><a href="#service-section" id="about">about</a></li>
+						<li><a href="#team-section">work</a></li>
 						<li><a href="#">blog</a></li>
-						<li><a href="#">contact</a></li>
+						<li><a href="#portfolio-section">contact</a></li>
 					</ul>
 				</nav>
 			<h1>ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
@@ -187,34 +187,54 @@
 					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					</p>
 					<ul class="portfolio-menu clearfix">
-						<li class="active portfolio-menu-item" id="all"><a href="#" ></a>All</li>
-						<li class=" portfolio-menu-item" id="web"><a href="#"></a>WEB</li>
-						<li class=" portfolio-menu-item" id="apps"><a href="#"></a>APPS</li>
-						<li class=" portfolio-menu-item" id="icon"><a href="#"></a>ICONS</li>
+						<li class="active portfolio-menu-item" data-type="all"><a href="#" ></a>All</li>
+						<li class=" portfolio-menu-item" id="web" data-type="web"><a href="#" ></a>WEB</li>
+						<li class=" portfolio-menu-item" data-type="app" ><a href="#"></a>APPS</li>
+						<li class=" portfolio-menu-item" data-type="icon"><a href="#"></a>ICONS</li>
 					</ul>
 
 					<div class="portfolio-container clearfix">
-							<div class="portfolio-section-item  portfolio-section-web">
+							<div class="portfolio-section-item  portfolio-web">
 								<img src="img/1.png"/>
 								<h5>Web Design</h5>
 							</div>
-							<div class="portfolio-section-item portfolio-section-app">
+							<div class="portfolio-section-item  portfolio-app">
 								<img src="img/2.png"/>
 								<h5>HTML / CSS</h5>
 							</div>
-							<div class="portfolio-section-item portfolio-section-app">
+							<div class="portfolio-section-item  portfolio-app">
 								<img src="img/3.png"/>
 								<h5>GRAPHIC DESIGN</h5>
 							</div>
-							<div class="portfolio-section-item portfolio-section-icon">
+							<div class="portfolio-section-item  portfolio-icon">
 								<img src="img/4.png"/>
 								<h5>UI / UX</h5>
 							</div>
-							<button id="green-btn">LOAD MORE PROJECTS</button>
+					
+								<!--LoadMore -->
+								<div class="portfolio-section-item  hidden portfolio-web ">
+								<img src="img/1.png"/>
+								<h5>LoadWeb Design</h5>
+							</div>
+							<div class="portfolio-section-item  hidden portfolio-app ">
+								<img src="img/2.png"/>
+								<h5> LoadHTML / CSS</h5>
+							</div>
+							<div class="portfolio-section-item hidden  portfolio-app ">
+								<img src="img/3.png"/>
+								<h5>LoadGRAPHIC DESIGN</h5>
+							</div>
+							<div class="portfolio-section-item hidden  portfolio-icon ">
+								<img src="img/4.png"/>
+								<h5>LoadUI / UX</h5>
+							</div>
+							
+								<button id="green-btn">LOAD MORE PROJECTS</button>
+							
 					</div>
 				</div>
 			</section>		
-					
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="min.js"></script>
 </body>
 </html>

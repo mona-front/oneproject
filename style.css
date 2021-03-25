@@ -74,6 +74,7 @@ section{
 }
 button#green-btn{
 	width: 300px;
+
 	margin-bottom:150px;
 	border-bottom-color: #14a58c;
 	background: #17c2a4;
@@ -250,6 +251,9 @@ padding-bottom: 40px;
 	float: left;
 	margin-bottom:50px;
 
+}
+.portfolio-section-item.hidden{
+	display: none;
 }
 .portfolio-section-item h5{
 	font-size: 20px;
