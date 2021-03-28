@@ -5,26 +5,51 @@
 	<title>Test Page</title>
 	<link rel="stylesheet" type="text/css" href="./css-circle/css/circle.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsiv.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<section class="header">
+	<section class="top-section">
 		<div class="container">
 		  	<header>
-				<a href="#" id="header_logo"></a>
-				<nav class="header_nav clearfix">
-					<ul  class="header_list">
-						<li><a href="#" class="active">home</a></li>
-						<li><a href="#service-section" id="about">about</a></li>
-						<li><a href="#team-section">work</a></li>
-						<li><a href="#">blog</a></li>
-						<li><a href="#portfolio-section">contact</a></li>
-					</ul>
-				</nav>
-			<h1>ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua
-			</h1>
-			<button >Work With Us!</button>
+		  		<div class="container ">
+					<a href="#" id="header_logo"></a>
+					<div id="mobile-menu">
+						 <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+					</div>
+
+					<nav class="header_nav clearfix">
+						<ul  class="header_list">
+							<li><a href="#" class="active">home</a></li>
+							<li><a href="#service-section" id="about">about</a></li>
+							<li><a href="#team-section">work</a></li>
+							<li><a href="#">blog</a></li>
+							<li><a href="#portfolio-section">contact</a></li>
+						</ul>
+					</nav>		
 			</header>
+<!-- resonsive nav -->
+			<div class="clearfix responsive">
+				<div class="responsiv-navigation ">
+					<ul class="responsiv-menu">
+						<li><a href="#" class="active">home</a></li>
+								<li><a href="#service-section" id="about">about</a></li>
+								<li><a href="#team-section">work</a></li>
+								<li><a href="#">blog</a></li>
+								<li><a href="#portfolio-section">contact</a></li>
+					</ul>
+				</div>
+			</div>
+<!-- End resonsive navigation -->
+			<article>
+				<h1>ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua
+				</h1>
+				<button >Work With Us!</button>
+			</article>
+
 		</div>
 	</section>
 	<section id="service-section">
@@ -210,8 +235,7 @@
 								<img src="img/4.png"/>
 								<h5>UI / UX</h5>
 							</div>
-					
-								<!--LoadMore -->
+				
 								<div class="portfolio-section-item  hidden portfolio-web ">
 								<img src="img/1.png"/>
 								<h5>LoadWeb Design</h5>
@@ -233,11 +257,38 @@
 							
 					</div>
 				</div>
-			</section>		
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+			</section>	
+			<section id="cantact-section">
+				<div class="container">
+					<h1>Cantact Use</h1>
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</p>
+					<form id="my-form"  method="post" action="http://google.com">
+						<div class="section-input">
+							<input type="password" name="q" placeholder="Your Name" id="name">
+							<input type="email" name="email" placeholder="Your Email" id="email">
+						</div>
+						<div class="section-texaria">
+							<textarea placeholder="Your Massage" id="jub"></textarea>
+							<input type="submit" name="submit" value="Send Massage" id="blue-button">
+						</div>
+					</form>
+				</div>
+			</section>	
+			<footer>
+				<div class="section-footer">
+					<ul class="section-footer-menu clearfix">
+						<li><a href="#">FaceBooke</a></li>
+						<li><a href="#">LinkedIn</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+				</div>
+			</footer>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="min.js"></script>
 </body>
-</html>
+</html> 
 
 
 

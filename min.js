@@ -36,7 +36,37 @@ let changetext=true;
         scrollTop: $(target).offset().top
     }, 1000);
 	})
+	$(window).scroll(function(){
+		if($(this).scrollTop() >=80){
+			$('header').addClass('active')
+			$('.responsiv-navigation').toggleClass('fix')
+			}
 	
+		
+	})
+	
+	$('#my-form').submit(function(e){
+		e.preventDefault()
+					$.ajax({
+						    url: "https://reqres.in/api/register",
+						    type: "POST",
+						    data: {
+						        "email": "eve.holt@reqres.in",
+   								 "password": "pistol"
+						    },
+						    success: function(response){
+						        console.log(response);
+						    }
+			});
+	
+		
+	})
+	$('#mobile-menu').click(function(){
+		$(this).toggleClass('change')
+		$('.responsiv-navigation').toggleClass('active-menu')
+	    	$('.responsiv-menu li').toggleClass('active-list')
+
+	})
 	function HiddenPorfolio(){
 		for(var i=0; i<portfoliosection.length;i++){
 			portfoliosection[i].style.display="none"
