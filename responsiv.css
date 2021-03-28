@@ -1,0 +1,182 @@
+/*
+
+
+@media only screen 
+ and (min-width:768px)
+ {
+  
+  
+	.container{
+		width:90%;
+		margin:0 auto;
+
+	}
+	
+
+	article{
+		width: 100%;
+	}
+
+	article h1{
+		width:90%;
+	font-size:20px;
+	}
+
+	#mobile-menu{
+		display: inline-block;
+	}
+
+ #service-section h1,
+ #portfolio-section h1,
+ #cantact-section h1
+ {
+ 	width: 90%;
+ 	font-size: 30px;
+ 	margin: 0 auto;
+ 	
+ }
+.service-section-item ,
+ .team-section-item,
+ .circle-section-item{
+ 	width:47%;
+ 	background: red;
+ {
+
+}
+
+
+
+@media only screen 
+ and (min-width:480px)
+ {
+  
+  
+	.header_list{
+		display: none;
+	}
+
+	
+}
+*/
+@media only screen and (max-width:768px){
+	.header_list{
+		display: none;
+	}
+
+	.container{
+		width:90%;
+		margin:0 auto;
+
+	}
+	article{
+		width: 100%;
+	}
+
+	 button{
+		width:35vw;
+		height:7vh;
+		margin-bottom: 10px;
+	}
+	#mobile-menu{
+		display: inline-block;
+	}
+	 .section-input input[type=text],input[type=email],
+	textarea, input[type=password]
+	
+		{
+			width:90%;
+		}
+		.section-input input:first-child{
+			margin-bottom:20px;
+		}
+		 #blue-button{
+		 	width:35vw;
+		 }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) 
+ {
+	
+    article h1{
+    	font-size: 20px;
+    	width: 100%;
+    }
+	
+
+	 #service-section h1,
+	 #portfolio-section h1,
+	 #cantact-section h1
+	 {
+ 	width:80%;
+ 	font-size: 30px;
+ 	margin: 0 auto;
+ 	
+	 }
+	.service-section-item ,
+	 .team-section-item,
+	 .circle-section-item,
+	 .portfolio-section-item
+
+	 {
+	 	width:100%;
+ }
+/*
+ 	body{
+ 		overflow-x: hidden;
+ 	}*/
+
+	}
+	.section-footer-menu{
+		width:auto;
+	}
+	.section-footer-menu  li{
+		float: none;
+
+
+
+	}
+ 
+ 	.portfolio-menu{
+		margin: 0 auto;
+
+	}
+		.portfolio-menu li{
+			width:20%;
+			
+		}
+}
+ @media only screen and (min-width:481px) and (max-width:768px) 
+  {
+	  article h1{
+		width:90%;
+		font-size:23px;
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-bottom: 10px;
+	}
+	
+	}
+
+ @media only screen and (min-width:768px) and (max-width:1024px)
+   {
+		
+		#green-btn{
+			width: 30vw;
+			margin-bottom: 10px;
+		}
+	.service-section-item ,
+	 .team-section-item,
+	 .circle-section-item{
+	 	width:47%;
+			 }
+	#service-section p{
+		margin-top: 20px;
+	}
+
+	.team-section-item p{
+		margin: 10px auto;
+
+ 		width: 70%;
+	}
+	}
